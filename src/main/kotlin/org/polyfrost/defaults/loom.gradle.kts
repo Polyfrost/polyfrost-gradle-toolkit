@@ -1,15 +1,15 @@
 package org.polyfrost.defaults
 
 import dev.architectury.pack200.java.Pack200Adapter
-import gradle.kotlin.dsl.accessors._0935894d714bf6b98fac60b9fc45a2f5.loom
-import gradle.kotlin.dsl.accessors._0935894d714bf6b98fac60b9fc45a2f5.mappings
-import gradle.kotlin.dsl.accessors._0935894d714bf6b98fac60b9fc45a2f5.minecraft
-import gradle.kotlin.dsl.accessors._0935894d714bf6b98fac60b9fc45a2f5.modImplementation
+import gradle.kotlin.dsl.accessors._7f302803de3c8e8ef0ce80f8d318d1c9.loom
+import gradle.kotlin.dsl.accessors._7f302803de3c8e8ef0ce80f8d318d1c9.mappings
+import gradle.kotlin.dsl.accessors._7f302803de3c8e8ef0ce80f8d318d1c9.minecraft
+import gradle.kotlin.dsl.accessors._7f302803de3c8e8ef0ce80f8d318d1c9.modImplementation
 import org.polyfrost.gradle.multiversion.Platform
 import org.polyfrost.gradle.util.setupLoomPlugin
 
 plugins {
-    id("org.polyfrost.loom")
+    id("gg.essential.loom")
 }
 val platform = Platform.of(project)
 

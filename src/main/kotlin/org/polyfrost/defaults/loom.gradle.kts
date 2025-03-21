@@ -44,6 +44,10 @@ val revisions = mutableListOf<Revision>()
 // one until they opt-in to the new one.
 revisions.add(Revision(
     yarn = mapOf(
+        12104 to "1.21.4+build.1:v2",
+        12103 to "1.21.3+build.2:v2",
+        12102 to "1.21.2+build.1:v2",
+        12101 to "1.21.1+build.3:v2",
         12100 to "1.21+build.2:v2",
         12006 to "1.20.6+build.1:v2",
         12005 to "1.20.5+build.1:v2",
@@ -87,8 +91,11 @@ revisions.add(Revision(
     ),
     fabricLoader = "0.13.3",
     forge = mapOf(
-        12100 to "1.21-51.0.3",
-        12006 to "1.20.6-50.1.3",
+        12104 to "1.21.4-54.0.26",
+        12103 to "1.21.3-53.0.44",
+        12101 to "1.21.1-52.0.47",
+        12100 to "1.21-51.0.33",
+        12006 to "1.20.6-50.1.39",
         12004 to "1.20.4-49.0.48",
         12003 to "1.20.3-49.0.2",
         12002 to "1.20.2-48.1.0",
@@ -118,7 +125,11 @@ revisions.add(Revision(
         10710 to "1.7.10-10.13.4.1558-1.7.10",
     ),
     neoForge = mapOf(
-        12100 to "21.0.0-beta",
+        12104 to "21.4.79-beta",
+        12103 to "21.3.60",
+        12102 to "21.2.1-beta",
+        12101 to "21.1.115",
+        12100 to "21.0.167",
         12006 to "20.6.7-beta",
         12005 to "20.5.21-beta",
         12004 to "20.4.234",
@@ -334,5 +345,11 @@ if (platform.isModLauncher) {
         mavenPom()
         artifact()
         ignoreGradleMetadataRedirection()
+    }
+}
+
+if (platform.isNeoForge) {
+    repositories {
+        maven("https://maven.neoforged.net/releases/")
     }
 }

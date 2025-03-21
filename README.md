@@ -1,5 +1,9 @@
 # Polyfrost Gradle Toolkit
+**NOTE: This is EoL and will soon be archived. Please use [Deftu's Gradle Toolkit (DGT)](https://github.com/Deftu/Gradle-Toolkit) instead!**
+
 A Gradle plugin providing various utility methods and common code required to set up multi-version Minecraft mods via [architectury-loom] and [preprocessor].
+
+Fork of Essential Gradle Toolkit, with Legacy Fabric support and an updated fork of Preprocessor by Deftu.
 
 ### Dependency
 <img alt="version badge" src="https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.polyfrost.org%2Freleases%2Forg%2Fpolyfrost%2Fpolyfrost-gradle-toolkit%2Fmaven-metadata.xml">
